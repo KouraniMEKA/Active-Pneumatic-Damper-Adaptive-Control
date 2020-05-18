@@ -35,15 +35,15 @@ MATLAB/Simulink software v2018a.
 
 # Sample results
 <p align="center">
-  <img src="">
+  <img src="https://github.com/KouraniMEKA/Active-Pneumatic-Damper-Adaptive-Control/blob/master/pictures/Output_error_baseline.JPG">
   <br />
-  Output error based on the reference model for a [0,10] square signal for the adaptive controller with the nonlinear model. 
+  Output error based on the reference model for a [0,10] input square signal for the simple controller with the nonlinear model. 
 </p>
 
 <p align="center">
-  <img src="">
+  <img src="https://github.com/KouraniMEKA/Active-Pneumatic-Damper-Adaptive-Control/blob/master/pictures/Output_error_adaptive.JPG">
   <br />
-  Output error based on the reference model for a [0,10] square signal for the simple controller with the nonlinear model.
+  Output error based on the reference model for a [0,10] input square signal for the adaptive controller with the nonlinear model.
 </p>
 
 # Authors
