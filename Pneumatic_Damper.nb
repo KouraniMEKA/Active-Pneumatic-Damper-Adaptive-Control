@@ -1,0 +1,312 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 9.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       157,          7]
+NotebookDataLength[     10158,        303]
+NotebookOptionsPosition[      9761,        286]
+NotebookOutlinePosition[     10140,        302]
+CellTagsIndexPosition[     10097,        299]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[{
+ RowBox[{"%%", " ", "Pneumatic", " ", "damper"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"f", "[", 
+   RowBox[{"x_", ",", " ", "y_"}], "]"}], ":=", 
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"Cos", "[", "x", "]"}], "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"Sin", "[", "y", "]"}], "}"}]}], "}"}]}]}], "Input",
+ CellChangeTimes->{{3.666227608419259*^9, 3.6662276256732464`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"SetAttributes", "[", 
+     RowBox[{"verbose", ",", "HoldAll"}], "]"}], ";"}], "\n", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"verbose", "@", "expr_"}], ":=", 
+     RowBox[{"Module", "[", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"res", "=", "expr"}], "}"}], ",", 
+       RowBox[{"If", "[", 
+        RowBox[{
+         RowBox[{"res", "=!=", "Null"}], ",", 
+         RowBox[{"CellPrint", "@", 
+          RowBox[{"Cell", "[", 
+           RowBox[{
+            RowBox[{"BoxData", "@", 
+             RowBox[{"ToBoxes", "@", "res"}]}], ",", "\"\<Output\>\"", ",", 
+            RowBox[{"CellTags", "\[Rule]", "\"\<ans =\>\""}], ",", 
+            RowBox[{"ShowCellTags", "\[Rule]", "True"}]}], "]"}]}]}], "]"}]}],
+       "]"}]}], ";"}], "\n", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"HoldPattern", "@", 
+      RowBox[{"verbose", "@", 
+       RowBox[{"Set", "[", 
+        RowBox[{"lhs_", ",", "rhs_"}], "]"}]}]}], ":=", 
+     RowBox[{"CellPrint", "@", 
+      RowBox[{"Cell", "[", 
+       RowBox[{
+        RowBox[{"BoxData", "@", 
+         RowBox[{"ToBoxes", "[", 
+          RowBox[{"lhs", "=", "rhs"}], "]"}]}], ",", "\"\<Output\>\"", ",", 
+        RowBox[{"CellTags", "\[Rule]", 
+         RowBox[{
+          RowBox[{"ToString", "@", 
+           RowBox[{"Unevaluated", "@", "lhs"}]}], "<>", "\"\< =\>\""}]}], ",", 
+        RowBox[{"ShowCellTags", "\[Rule]", "True"}]}], "]"}]}]}], ";"}], "\n", 
+   RowBox[{
+    RowBox[{"$Pre", "=", "verbose"}], ";"}]}]}]], "Input",
+ CellChangeTimes->{{3.66622781071183*^9, 3.666227854054309*^9}, {
+  3.6662279287215796`*^9, 3.666228179633931*^9}, {3.6662290241822367`*^9, 
+  3.666229226895831*^9}, {3.6662296723953123`*^9, 3.6662297022270184`*^9}, {
+  3.666229880817233*^9, 3.6662299212955484`*^9}, {3.6662527666364098`*^9, 
+  3.666252767745474*^9}, {3.666252849102127*^9, 3.6662529372471685`*^9}, {
+  3.666253159072856*^9, 3.6662531839622793`*^9}, {3.6662532170911746`*^9, 
+  3.6662533922711945`*^9}, {3.6662534367107363`*^9, 3.6662534874406376`*^9}}],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"\[Gamma]", "=", "1.41"}], 
+  RowBox[{"(*", 
+   RowBox[{
+    RowBox[{
+    "heat", " ", "capacity", " ", "ratio", " ", "of", " ", "air", " ", "at", 
+     " ", "T"}], "=", 
+    RowBox[{"20", " ", "deg"}]}], "*)"}], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"A", "=", 
+   RowBox[{"Pi", "*", 
+    RowBox[{
+     RowBox[{"(", "0.15", ")"}], "^", "2"}]}]}], " ", 
+  RowBox[{"(*", 
+   RowBox[{
+   "Pressure", " ", "chamber", " ", "cross", " ", "sectional", " ", "area", 
+    " ", 
+    RowBox[{"_m", "^", "2"}]}], "*)"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   SubscriptBox["P", "s"], "=", "3"}], " ", 
+  RowBox[{"(*", 
+   RowBox[{"Air", " ", "source", " ", "Pressure", " ", "_bar"}], 
+   "*)"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   SubscriptBox["\[Mu]", "water"], "=", " ", "1.0"}], 
+  RowBox[{"(*", 
+   RowBox[{
+    RowBox[{"Dynamic", " ", "viscosity", " ", "of", " ", "water", " ", 
+     RowBox[{"_mPa", ".", "s"}], " ", "at", " ", "T"}], "=", 
+    RowBox[{"20", "deg"}]}], " ", "*)"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   SubscriptBox["\[Rho]", "water"], "=", " ", "998"}], 
+  RowBox[{"(*", 
+   RowBox[{
+    RowBox[{"density", " ", "of", " ", "water", " ", 
+     RowBox[{"_kg", "/", 
+      RowBox[{"m", "^", "3"}]}], " ", "at", " ", "T"}], "=", 
+    RowBox[{"20", "deg"}]}], "*)"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   SubscriptBox["\[Rho]", "s"], "=", "3.44"}], 
+  RowBox[{"(*", 
+   RowBox[{
+    RowBox[{"Air", " ", "source", " ", "density", " ", 
+     RowBox[{"_kg", "/", 
+      RowBox[{"m", "^", "3"}]}], " ", "at", " ", "T"}], "=", 
+    RowBox[{"30", "deg"}]}], "*)"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   SubscriptBox["T", "0"], "=", 
+   RowBox[{"22", "+", "273"}]}], 
+  RowBox[{"(*", 
+   RowBox[{"Ambiant", " ", "Temperature", " ", "_Kelvin"}], 
+   "*)"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   SubscriptBox["T", "A1"], "=", 
+   RowBox[{"25", "+", "273"}]}], " ", 
+  RowBox[{"(*", 
+   RowBox[{"Pressure", " ", "Chamber1", " ", "temperature"}], 
+   "*)"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   SubscriptBox["T", "A2"], "=", 
+   RowBox[{"25", "+", "273"}]}], " ", 
+  RowBox[{"(*", 
+   RowBox[{"Pressure", " ", "Chamber2", " ", "temperature", " ", "_Kelvin"}], 
+   "*)"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   SubscriptBox["T", "s"], "=", 
+   RowBox[{"30", "+", "273"}]}], " ", 
+  RowBox[{"(*", 
+   RowBox[{"Source", " ", "Air", " ", "Temerature", " ", "_deg", " ", "cC"}], 
+   "*)"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   SubscriptBox["l", "pipe"], "=", "1"}], 
+  RowBox[{"(*", 
+   RowBox[{"Water", " ", "Pipe", " ", "Length", " ", "_m"}], 
+   "*)"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   SubscriptBox["d", "pipe"], "=", 
+   RowBox[{"10", "/", "1000"}]}], " ", 
+  RowBox[{"(*", 
+   RowBox[{"water", " ", "pipe", " ", "diameter"}], 
+   "*)"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   SubscriptBox["A", "pipe"], "=", 
+   RowBox[{"Pi", "*", 
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{
+       SubscriptBox["d", "pipe"], "/", "2"}], ")"}], "^", "2"}]}]}], 
+  RowBox[{"(*", 
+   RowBox[{
+   "Water", " ", "pipe", " ", "cross", " ", "sectionnal", " ", "area"}], 
+   "*)"}], "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{"Re", "="}]}], "Input",
+ CellChangeTimes->{{3.6662535030335293`*^9, 3.666253773777015*^9}, {
+  3.666253809892081*^9, 3.666253913446004*^9}, {3.6662539585285826`*^9, 
+  3.666253971234309*^9}, {3.666254061498472*^9, 3.6662540963854675`*^9}, {
+  3.6662541420030766`*^9, 3.66625417965123*^9}, {3.666254226058884*^9, 
+  3.66625423210723*^9}, {3.666254272396535*^9, 3.6662543432915897`*^9}, {
+  3.6662545276011314`*^9, 3.666254533461467*^9}, {3.666254672896442*^9, 
+  3.666254882172412*^9}, {3.6662549235027757`*^9, 3.66625498791846*^9}}],
+
+Cell[BoxData[
+ RowBox[{"\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{
+    RowBox[{
+     SubscriptBox["P", "A1"], "'"}], "=", 
+    RowBox[{
+     FractionBox["\[Gamma]", 
+      RowBox[{"(", 
+       RowBox[{
+        SubscriptBox["h", "o"], "-", 
+        SubscriptBox["h", "A1"]}], ")"}]], "*", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"R", "*", 
+        FractionBox[
+         RowBox[{
+          SubscriptBox["m", "A1"], "'"}], "A"]}], "+", 
+       RowBox[{
+        SubscriptBox["P", "A1"], "*", 
+        RowBox[{
+         SubscriptBox["h", "A1"], "'"}]}]}], ")"}]}]}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{
+     SubscriptBox["m", "A1"], "'"}], "=", "   ", 
+    RowBox[{"u", "*", "c", "*", 
+     SubscriptBox["P", "s"], "*", 
+     SubscriptBox["\[Rho]", "0"], "*", 
+     SqrtBox[
+      FractionBox[
+       SubscriptBox["T", "0"], 
+       SubscriptBox["T", "s"]]], "*", 
+     SubscriptBox["\[Alpha]", "1"]}]}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{
+     SubscriptBox["m", "A2"], "'"}], "=", 
+    RowBox[{
+     RowBox[{"-", "u"}], "*", "c", "*", 
+     SubscriptBox["P", "s"], "*", 
+     SubscriptBox["\[Rho]", "0"], "*", 
+     SqrtBox[
+      FractionBox[
+       SubscriptBox["T", "0"], 
+       SubscriptBox["T", "s"]]], "*", 
+     SubscriptBox["\[Alpha]", "2"]}]}], "\n", 
+   RowBox[{
+    RowBox[{
+     SubscriptBox["P", "A"], "-", 
+     SubscriptBox["P", "e"]}], "=", 
+    FractionBox[
+     RowBox[{"128", "*", "\[Mu]", "*", "l"}], 
+     RowBox[{"(", 
+      RowBox[{"\[Pi]", "*", 
+       RowBox[{"d", "^", "4"}]}], ")"}]]}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{
+     SubscriptBox["P", "A"], "-", 
+     SubscriptBox["P", "e"]}], "=", 
+    RowBox[{
+     FractionBox["0.3164", 
+      RowBox[{
+       SubscriptBox["R", "e"], "^", "0.25"}]], "*", 
+     FractionBox["l", "d"], "*", 
+     FractionBox[
+      SubscriptBox["\[Rho]", "l"], "2"], "*", 
+     FractionBox[
+      SubscriptBox["Q", "Ae"], 
+      RowBox[{"(", 
+       RowBox[{
+        FractionBox["\[Pi]", "4"], "*", 
+        RowBox[{"d", "^", "2"}]}], ")"}]]}]}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{
+     SubscriptBox["P", "A"], "-", 
+     SubscriptBox["P", "B"]}], "=", 
+    RowBox[{
+     FractionBox[
+      RowBox[{"l", "*", "\[Rho]"}], "A"], "*", 
+     RowBox[{
+      SubscriptBox["Q", "Ae"], "'"}]}]}]}]}]], "Input",
+ CellChangeTimes->{{3.66622781071183*^9, 3.666227854054309*^9}, {
+  3.6662279287215796`*^9, 3.666228179633931*^9}, {3.6662290241822367`*^9, 
+  3.666229226895831*^9}, {3.6662296723953123`*^9, 3.6662297022270184`*^9}, {
+  3.666229880817233*^9, 3.6662299212955484`*^9}, {3.6662527666364098`*^9, 
+  3.666252767745474*^9}, {3.666252849102127*^9, 3.6662529372471685`*^9}, {
+  3.666253159072856*^9, 3.6662531839622793`*^9}, {3.6662532170911746`*^9, 
+  3.6662533922711945`*^9}, {3.6662534367107363`*^9, 3.6662534874406376`*^9}}]
+},
+WindowSize->{784, 822},
+WindowMargins->{{Automatic, 0}, {0, Automatic}},
+Magnification->1.3000000715255737`,
+FrontEndVersion->"9.0 for Microsoft Windows (64-bit) (November 20, 2012)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[557, 20, 416, 11, 65, "Input"],
+Cell[976, 33, 2066, 49, 315, "Input"],
+Cell[3045, 84, 3865, 112, 415, "Input"],
+Cell[6913, 198, 2844, 86, 446, "Input"]
+}
+]
+*)
+
+(* End of internal cache information *)
