@@ -4,8 +4,8 @@ The circulatory system can be comparable to a hydraulic system were the heart is
 <br />
 Four controllers are presented: <br />
 1. [Baseline Controller](https://github.com/KouraniMEKA/Active-Pneumatic-Damper-Adaptive-Control/tree/master/Simple_Controller_Nonlinear) (No adaptation), <br />
-2. Direct Self Tuning Regulator, [DSTR](https://github.com/KouraniMEKA/Active-Pneumatic-Damper-Adaptive-Control/tree/master/DSTR_Nonlinear) (adaptive 1), <br />
-3. Indirect Self Tuning Regulator, [ISTR](https://github.com/KouraniMEKA/Active-Pneumatic-Damper-Adaptive-Control/tree/master/ISTR_Nonlinear) (adaptive 2), <br />
+2. Direct Self-Tuning Regulator, [DSTR](https://github.com/KouraniMEKA/Active-Pneumatic-Damper-Adaptive-Control/tree/master/DSTR_Nonlinear) (adaptive 1), <br />
+3. Indirect Self-Tuning Regulator, [ISTR](https://github.com/KouraniMEKA/Active-Pneumatic-Damper-Adaptive-Control/tree/master/ISTR_Nonlinear) (adaptive 2), <br />
 4. Model Reference Adaptive Controller, [MRAC](https://github.com/KouraniMEKA/Active-Pneumatic-Damper-Adaptive-Control/tree/master/MRAC_output_feedback) (adaptive 3). <br />
 
 
