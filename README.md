@@ -9,7 +9,9 @@ Four controllers are presented: <br />
 4. Model Reference Adaptive Controller, [MRAC](https://github.com/KouraniMEKA/Active-Pneumatic-Damper-Adaptive-Control/tree/master/MRAC_output_feedback) (adaptive 3). <br />
 
 <br />
-A full [project report](https://github.com/KouraniMEKA/Active-Pneumatic-Damper-Adaptive-Control/tree/master/Report_Active_Pneumatic_Damper.pdf) is included.
+[ ]()
+A full [project report](https://github.com/KouraniMEKA/Active-Pneumatic-Damper-Adaptive-Control/blob/master/Report_Active_Pneumatic_Damper.pdf) is included.
+<br />
 <br />
 
 <p align="center">
