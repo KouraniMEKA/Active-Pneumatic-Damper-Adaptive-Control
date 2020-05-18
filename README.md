@@ -15,17 +15,16 @@ A full [project report](https://github.com/KouraniMEKA/Active-Pneumatic-Damper-A
 [](https://)
 <br />
 
+<p align="center">
+  <img src="https://github.com/KouraniMEKA/Active-Pneumatic-Damper-Adaptive-Control/blob/master/pictures/Pneumatic%20Damper.PNG" width="245" height="250" >
+  <br />
+  Pneumatic damper diagram.
+</p>
 
 <p align="center">
   <img src="https://github.com/KouraniMEKA/Active-Pneumatic-Damper-Adaptive-Control/blob/master/extra/Experimental_Setup_annotated.jpg">
   <br />
   Experimental setup.
-</p>
-
-<p align="center">
-  <img src="https://github.com/KouraniMEKA/Active-Pneumatic-Damper-Adaptive-Control/blob/master/pictures/Pressure%20Chamber.PNG" width="245" height="250" >
-  <br />
-  Pressure chamber diagram.
 </p>
 
 
