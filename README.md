@@ -5,15 +5,13 @@ The circulatory system can be comparable to a hydraulic system were the heart is
 
 
 <p align="center">
-  <img src="https://github.com/KouraniMEKA/Active-Pneumatic-Damper-Adaptive-Control/blob/master/pictures/Pneumatic%20Damper.PNG
-">
+  <img src="https://github.com/KouraniMEKA/Active-Pneumatic-Damper-Adaptive-Control/blob/master/pictures/Pneumatic%20Damper.PNG">
   <br />
   Pneumatic damper diagram.
 </p>
 
 <p align="center">
-  <img src="https://github.com/KouraniMEKA/Active-Pneumatic-Damper-Adaptive-Control/blob/master/pictures/Pressure%20Chamber.PNG
-">
+  <img src="https://github.com/KouraniMEKA/Active-Pneumatic-Damper-Adaptive-Control/blob/master/pictures/Pressure%20Chamber.PNG">
   <br />
   Pneumatic damper diagram.
 </p>
