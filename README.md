@@ -16,7 +16,7 @@ A full [project report](https://github.com/KouraniMEKA/Active-Pneumatic-Damper-A
 <br />
 
 <p align="center">
-  <img src="https://github.com/KouraniMEKA/Active-Pneumatic-Damper-Adaptive-Control/blob/master/pictures/Pneumatic%20Damper.PNG" width="245" height="250" >
+  <img src="https://github.com/KouraniMEKA/Active-Pneumatic-Damper-Adaptive-Control/blob/master/pictures/Pneumatic%20Damper.PNG" width="425" height="235" >
   <br />
   Pneumatic damper diagram.
 </p>
