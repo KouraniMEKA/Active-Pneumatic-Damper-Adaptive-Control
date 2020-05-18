@@ -28,7 +28,7 @@ MATLAB/Simulink software v2018a.
 # How to use
 1. Download the files. <br />
 2. double click ["ActivePneumaticDamperAdaptiveControl.prj"](https://github.com/KouraniMEKA/Active-Pneumatic-Damper-Adaptive-Control/blob/master/TetheredUAVControl.prj) to open it in the MATLAB/Simulink environment. <br />
-3. choose the desired control scheme folder (Simple Controller_Nonlinear, DSTR_Nonlinear, ISTR_Nonlinear, MRAC_output feedback)
+3. choose the desired control scheme folder (Simple_Controller_Nonlinear, DSTR_Nonlinear, ISTR_Nonlinear, MRAC_output_feedback)
 4. Run the corresponding MATLAB script to load the parameters. <br />
 5. Run the Simulink model to generate the results (results can be monitored in the scope elements). <br />
 5. ... Edit the MATLAB script for your desiered scenario and parameters. <br />
@@ -37,13 +37,13 @@ MATLAB/Simulink software v2018a.
 <p align="center">
   <img src="https://github.com/KouraniMEKA/Active-Pneumatic-Damper-Adaptive-Control/blob/master/pictures/Output_error_baseline.JPG">
   <br />
-  Output error based on the reference model for a [0,10] input square signal for the **simple controller** with the nonlinear model. 
+  Output error based on the reference model for a [0,10] input square signal for the __simple controller__ with the nonlinear model. 
 </p>
 
 <p align="center">
   <img src="https://github.com/KouraniMEKA/Active-Pneumatic-Damper-Adaptive-Control/blob/master/pictures/Output_error_adaptive.JPG">
   <br />
-  Output error based on the reference model for a [0,10] input square signal for the **adaptive controller** with the nonlinear model.
+  Output error based on the reference model for a [0,10] input square signal for the __adaptive controller__ with the nonlinear model.
 </p>
 
 # Authors
