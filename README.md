@@ -10,9 +10,15 @@ Four controllers are presented: <br />
 
 <br />
 [-](https://)
+<br />
+<br />
+
 A full [project report](https://github.com/KouraniMEKA/Active-Pneumatic-Damper-Adaptive-Control/blob/master/Report_Active_Pneumatic_Damper.pdf) is included. <br />
 <br />
 <br />
+[](https://)
+<br />
+
 
 <p align="center">
   <img src="https://github.com/KouraniMEKA/Active-Pneumatic-Damper-Adaptive-Control/blob/master/pictures/Pneumatic%20Damper.PNG" width="425" height="264">
