@@ -35,7 +35,7 @@ Additional project related content is available in the [extra](https://github.co
 
 
 # Prerequisites
-MATLAB/Simulink software v2018a.
+MATLAB/Simulink software v2018a or higher.
 
 # How to use
 1. Download the files. <br />
