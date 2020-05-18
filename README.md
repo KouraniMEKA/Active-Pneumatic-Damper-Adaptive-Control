@@ -17,9 +17,9 @@ A full [project report](https://github.com/KouraniMEKA/Active-Pneumatic-Damper-A
 
 
 <p align="center">
-  <img src="https://github.com/KouraniMEKA/Active-Pneumatic-Damper-Adaptive-Control/blob/master/pictures/Pneumatic%20Damper.PNG" width="425" height="264">
+  <img src="https://github.com/KouraniMEKA/Active-Pneumatic-Damper-Adaptive-Control/blob/master/extra/Experimental_Setup_annotated.jpg">
   <br />
-  Pneumatic damper diagram.
+  Experimental setup.
 </p>
 
 <p align="center">
@@ -57,6 +57,7 @@ MATLAB/Simulink software v2018a.
 * **Ahmad Kourani** - *inital work* - [KouraniMEKA](https://github.com/KouraniMEKA).
 * **Abdel-Rahman Koleilat**
 * **Peter El Haddad** 
+* **Matthias Liermann**
 
 # License
 This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/KouraniMEKA/Tethered-UAV-control/blob/master/LICENSE) file for details.
