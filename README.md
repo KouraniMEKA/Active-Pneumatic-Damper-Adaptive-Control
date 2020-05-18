@@ -14,6 +14,12 @@ Four controllers are presented: <br />
 A full [project report](https://github.com/KouraniMEKA/Active-Pneumatic-Damper-Adaptive-Control/blob/master/Report_Active_Pneumatic_Damper.pdf) is included. <br />
 [](https://)
 <br />
+Additional project related content is available in the [extra](https://github.com/KouraniMEKA/Active-Pneumatic-Damper-Adaptive-Control/tree/master/extra) folder: <br />
+1. [handout model derivation](https://github.com/KouraniMEKA/Active-Pneumatic-Damper-Adaptive-Control/blob/master/extra/Dr.%20Liermann's%20Handout.JPG), <br />
+2. model derivation [report in Mathematica](https://github.com/KouraniMEKA/Active-Pneumatic-Damper-Adaptive-Control/blob/master/extra/Model_derivation_in_Mathematica.pdf), <br />
+3. model derivation as a [Mathematica script](https://github.com/KouraniMEKA/Active-Pneumatic-Damper-Adaptive-Control/blob/master/extra/Pneumatic_Damper.nb), <br />
+4. [report on water level selection](https://github.com/KouraniMEKA/Active-Pneumatic-Damper-Adaptive-Control/blob/master/extra/Report_Water_Level_Sensor%20.pdf). <br />
+
 
 <p align="center">
   <img src="https://github.com/KouraniMEKA/Active-Pneumatic-Damper-Adaptive-Control/blob/master/pictures/Pneumatic%20Damper.PNG" width="425" height="235" >
