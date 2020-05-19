@@ -65,5 +65,5 @@ MATLAB/Simulink software v2018a or higher.
 * **Matthias Liermann**
 
 # License
-This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/KouraniMEKA/Tethered-UAV-control/blob/master/LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/KouraniMEKA/Active-Pneumatic-Damper-Adaptive-Control/blob/master/LICENSE) file for details.
  
